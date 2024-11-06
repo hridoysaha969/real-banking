@@ -273,6 +273,18 @@ declare interface getInstitutionProps {
 declare interface getTransactionsProps {
   accessToken: string;
 }
+interface Transaction {
+  id: string;
+  name: string;
+  paymentChannel: string;
+  type: string;
+  accountId: string;
+  amount: number;
+  pending: boolean;
+  category: string;
+  date: string;
+  image?: string;
+}
 
 declare interface CreateFundingSourceOptions {
   customerId: string; // Dwolla Customer ID
