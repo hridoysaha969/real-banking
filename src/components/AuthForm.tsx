@@ -88,7 +88,7 @@ const AuthForm = ({ type }: { type: string }) => {
             <p className="text-16 font-normal text-gray-600">
               {user
                 ? "Link your account to get started."
-                : "Please enter your details"}
+                : "Please enter your Legal government issued information."}
             </p>
           </h1>
         </div>
