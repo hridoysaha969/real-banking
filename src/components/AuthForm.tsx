@@ -85,7 +85,7 @@ const AuthForm = ({ type }: { type: string }) => {
           <h1 className="text-24 lg:text-36 font-semibold text-gray-900">
             {user ? "Link Account" : type === "sign-in" ? "Sign In" : "Sign Up"}
 
-            <p className="text-[14px] flex items-center gap-2 font-normal text-gray-600">
+            <div className="text-[14px] flex items-center gap-2 font-normal text-gray-600">
               {user
                 ? "Link your account to get started."
                 : "Please enter your government issued legal information."}
@@ -93,7 +93,7 @@ const AuthForm = ({ type }: { type: string }) => {
                 <div className="">
                   <div className="relative group">
                     {/* Query Icon */}
-                    <div className="flex items-center justify-center w-4 h-4 bg-blue-400 text-white sm:text-xs text-[8px] rounded-full cursor-pointer">
+                    <div className="flex md:items-center items-start justify-center w-4 h-4 bg-blue-400 text-white sm:text-xs text-[8px] rounded-full cursor-pointer">
                       ?
                     </div>
 
@@ -105,7 +105,7 @@ const AuthForm = ({ type }: { type: string }) => {
                   </div>
                 </div>
               )}
-            </p>
+            </div>
           </h1>
         </div>
       </header>
