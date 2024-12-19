@@ -93,7 +93,7 @@ const AuthForm = ({ type }: { type: string }) => {
                 <div className="">
                   <div className="relative group">
                     {/* Query Icon */}
-                    <div className="flex items-center justify-center w-4 h-4 bg-blue-400 text-white text-xs text-[8px] rounded-full cursor-pointer">
+                    <div className="flex items-center justify-center w-4 h-4 bg-blue-400 text-white sm:text-xs text-[8px] rounded-full cursor-pointer">
                       ?
                     </div>
 
