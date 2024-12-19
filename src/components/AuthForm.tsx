@@ -85,10 +85,26 @@ const AuthForm = ({ type }: { type: string }) => {
           <h1 className="text-24 lg:text-36 font-semibold text-gray-900">
             {user ? "Link Account" : type === "sign-in" ? "Sign In" : "Sign Up"}
 
-            <p className="text-16 font-normal text-gray-600">
+            <p className="text-[14px] flex items-center gap-2 font-normal text-gray-600">
               {user
                 ? "Link your account to get started."
-                : "Please enter your Legal government issued information."}
+                : "Please enter your government issued legal information."}
+              {type === "sign-in" && (
+                <div className="">
+                  <div className="relative group">
+                    {/* Query Icon */}
+                    <div className="flex items-center justify-center w-4 h-4 bg-blue-400 text-white rounded-full cursor-pointer">
+                      ?
+                    </div>
+
+                    {/* Tooltip */}
+                    <div className="absolute max-w-xs bottom-10 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white text-sm rounded-md px-3 py-2 shadow-lg">
+                      <p>Email: johndoe@test.com</p>
+                      <p>Password: pass_123</p>
+                    </div>
+                  </div>
+                </div>
+              )}
             </p>
           </h1>
         </div>
